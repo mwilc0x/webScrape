@@ -17,7 +17,7 @@
 
 import urllib2,sys,csv,imp
 
-BeautifulSoup = imp.load_source('BeautifulSoup', 'lib/python/lib/BeautifulSoup.py')
+BeautifulSoup = imp.load_source('BeautifulSoup', 'src/lib/python/lib/BeautifulSoup.py')
 
 from BeautifulSoup import BeautifulSoup,NavigableString,re,SoupStrainer
 
@@ -28,12 +28,12 @@ ruid = '133001494'
 i=20
 symbols = []
 
-symbolReader = csv.reader(open('ticker_list.csv', 'rb'), delimiter=' ')
+symbolReader = csv.reader(open('src/ticker_list.csv', 'rb'), delimiter=' ')
 for row in symbolReader:
         symbols.append(''.join(e for e in str(row) if e.isalnum()))
 
 #CHANGE NAME OF CSV FILE BELOW TO REFLECT NAME OF FILE WRITING TO
-output = open('name_of_output.csv', 'wb')
+output = open('fast_money.csv', 'wb')
 
 
 stockWriter = csv.writer(output, delimiter = ',', quoting = csv.QUOTE_ALL)
