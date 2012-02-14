@@ -25,8 +25,10 @@ Updates:
 
 -------
 
-	1. Script checks stock symbols against provided ticker_list
-	2. Scripts run on i-Lab machines. Please note that some code had to be placed into the src folder for this to happen. All modules are still in the 
+	1. Added a shell script which will automatically run both of the scripts back to back
+	2. Each script generates a different csv file. Each file will still need to be manually merged.
+	3. Script checks stock symbols against provided ticker_list
+	4. Scripts run on i-Lab machines. Please note that some code had to be placed into the src folder for this to happen. All modules are still in the 
 	   lib/ folder.
 
 Use:
