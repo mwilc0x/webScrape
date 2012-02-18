@@ -36,13 +36,11 @@ Use:
 
 The way I set it up is that the scripts look for the BeautifulSoup modules in a subfolder. This was the only way I could get them to work on the iLab machines for the time being. They will work though.
 
-To start scraping either forum section and generating a csv file, in src/ type either:
+To run both of the scrapers, which will run simultaneously, run the command:
 
-	python cram_scrape.py
+				./run_code.sh
 
-		OR
-
-	python fast_money_scrape.py
+and then sit back and enjoy the data collection :)
 
 
 About:
